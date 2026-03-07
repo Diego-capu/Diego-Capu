@@ -1,0 +1,1 @@
+print(type("Hola"),  type(42), type(10.0), type(False))
