@@ -11,7 +11,7 @@ try:
         nota2 = socio * 0.20
         nota3 = desarrollo * 0.60
 
-        resultado = nota1 + nota2 + nota3 / 3
+        resultado = nota1 + nota2 + nota3 
 
         print(f"Tu promedio es de: {resultado}")
 
