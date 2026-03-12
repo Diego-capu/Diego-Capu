@@ -1,12 +1,16 @@
 print("Calcula tu promedio")
 
-contador = 0
-while contador == 0:
+reprobados = 0
+excelentes = 0
+regulares = 0
+coder = 0
+
+while  5 :
 
     try: 
         modulo = int(input("Ingresa tu modulo: "))
         
-        nombre = str(input("Ingresa tu nombre: "))
+        nombre =  input("Ingresa tu nombre: ")
 
         print(f"Bienvenido: {nombre}")
 
@@ -14,7 +18,7 @@ while contador == 0:
         socio = float(input("Ingresa tu nota de socio: "))
         desarrollo = float(input("Ingresa tu nota de Desarrollo: "))
 
-        if socio and ingles and desarrollo <= 100:
+        if socio <= 100 and ingles <= 100 and  desarrollo <= 100:
 
 
             nota1 = ingles * 0.20
@@ -23,17 +27,24 @@ while contador == 0:
 
             resultado = nota1 + nota2 + nota3
 
+            print(f"Modulo {modulo}")
             print(f"Tu promedio es: {resultado}")
 
             if 0 <= resultado and resultado < 49:
+                reprobados = reprobados + 1
+                coder = coder + 1
 
                 print("Reprobado")
 
             elif 50 <=  resultado and resultado < 79:
+                regulares = regulares + 1
+                coder = coder + 1
 
                 print("Regular")
 
             elif resultado >=80:
+                excelentes = excelentes + 1
+                coder = coder + 1
 
                 print("Excelente")
             
@@ -44,3 +55,8 @@ while contador == 0:
 
     except ValueError as e:
         print("No se permiten letras")       
+
+print(f"Coders reprobados: {reprobados}")  
+print(f"Coders regulares: {regulares}") 
+print(f"Coder con promedio excelente: {excelentes}") 
+print(f"Numero de coders registrdos: {coder}")    
