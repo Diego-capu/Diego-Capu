@@ -5,7 +5,9 @@ while contador == 0:
 
     try: 
         modulo = int(input("Ingresa tu modulo: "))
+        
         nombre = str(input("Ingresa tu nombre: "))
+
         print(f"Bienvenido: {nombre}")
 
         ingles = float(input("Ingresa su nota de Ingles: "))
