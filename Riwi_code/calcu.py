@@ -4,8 +4,9 @@ reprobados = 0
 excelentes = 0
 regulares = 0
 coder = 0
+contador = 0
 
-while  5 :
+while  contador < 5 :
 
     try: 
         modulo = int(input("Ingresa tu modulo: "))
@@ -29,6 +30,7 @@ while  5 :
 
             print(f"Modulo {modulo}")
             print(f"Tu promedio es: {resultado}")
+            contador = contador + 1
 
             if 0 <= resultado and resultado < 49:
                 reprobados = reprobados + 1
@@ -47,6 +49,8 @@ while  5 :
                 coder = coder + 1
 
                 print("Excelente")
+
+                
             
 
            

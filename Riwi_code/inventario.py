@@ -1,21 +1,23 @@
-#Evita que se puedan ingresar datos invalidos 
-try:
-    #solicitar datos al usuario
-    nombre = input("Ingrese su nombre: ")
-    precio = float(input("Ingrese su preicio: "))
-    cantidad = int(input("Ingrese la cantidad: "))
+# Este bucle while True crea un programa que se ejecuta indefinidamente
+while True:
+    # El bloque try-except se usa para manejar errores de entrada
+    try:
+        # Solicitamos el nombre del producto, precio y cantidad
+        nombre = input("Ingrese su nombre: ")
+        precio = float(input("Ingrese su preicio: "))
+        cantidad = int(input("Ingrese la cantidad: "))
 
-    #Realiza la operacion y almacena el resultado
-    costo_total = precio * cantidad
+       # Realizamos el cálculo principal: precio unitario × cantidad
+        costo_total = precio * cantidad
 
-    #Imprime los resultados
-    print(f"Nombre del producto: {nombre}")
-    print(f"Precio del producto: {precio}")
-    print(f"Cantidad del producto: {cantidad}")
-    print(f"Costo total: {costo_total}")
+        # Mostramos todos los datos de forma clara 
+        print(f"Nombre del producto: {nombre}")
+        print(f"Precio del producto: {precio}")
+        print(f"Cantidad del producto: {cantidad}")
+        print(f"Costo total: {costo_total}")
 
 
 
-except ValueError as  e:
-    print("Valor invalido")
+    except ValueError as  e:
+        print("Valor invalido")
 
