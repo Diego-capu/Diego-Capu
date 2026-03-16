@@ -4,7 +4,7 @@ while True:
     try:
         # Solicitamos el nombre del producto, precio y cantidad
         nombre = input("Ingrese su nombre: ")
-        precio = float(input("Ingrese su preicio: "))
+        precio = float(input("Ingrese su precio: "))
         cantidad = int(input("Ingrese la cantidad: "))
 
        # Realizamos el cálculo principal: precio unitario × cantidad
